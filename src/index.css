@@ -120,10 +120,11 @@ input[type='checkbox'] {
   color: rgb(161, 160, 160);
 }
 .icons-container {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 2px;  
-  margin-left: auto;
+
   
 }
 .delete-icon {
@@ -161,6 +162,8 @@ input[type='checkbox'] {
   padding: 5px 10px;
   font-size: 1rem;
   width: 70%;
+  flex: 1;
+  min-width: 0;
 }
 
 .edit-icon {
@@ -263,9 +266,44 @@ input[type='checkbox'] {
   .inputField input {
     font-size: 0.8rem;
   }
+  .itmes{
+    flex-wrap: wrap;
+    gap:8px;
+  }
+  .items-text{
+    flex: 1;
+  }
 
   .list-items .items {
     font-size: 0.8rem;
     padding: 8px;
+  }
+}
+/* Make input and text flexible */
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;   /* Fit mobile screen */
+  }
+
+  .items {
+    flex-wrap: wrap;   /* Allow wrapping */
+    gap: 8px;
+  }
+
+  .items-text {
+    flex: 1;   /* Expand text area */
+  }
+
+  .icons-container {
+    justify-content: flex-end;
+    width: 100%;  /* Push icons to next row if needed */
+  }
+
+  .edit-icon, .save-icon, .delete-icon {
+    font-size: 20px;
+    width: 26px;
+    height: 26px;
   }
 }
