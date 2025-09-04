@@ -240,6 +240,11 @@ input[type='checkbox'] {
     gap: 2px ;              /* small gap */
     margin-left: auto ;
   }
+  .icons-container .edit-icon,
+  .icons-container .delete-icon,
+  .icons-container .save-icon {  
+    flex-shrink: 0;         
+  }
   .stats {
     padding: 6px 8px;
     font-size: 0.85rem;
