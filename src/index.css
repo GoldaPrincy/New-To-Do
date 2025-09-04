@@ -217,7 +217,7 @@ input[type='checkbox'] {
   }
 
   .inputField input {
-    width: 80%;             /* Input takes more space */
+    width: 40%;             /* Input takes more space */
     font-size: 0.9rem;
   }
 
