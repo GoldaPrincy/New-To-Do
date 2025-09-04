@@ -196,74 +196,76 @@ input[type='checkbox'] {
 }
 
 /* =========== Small Devices (Phones) =========== */
-@media (max-width: 480px) {
+/* 📱 Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
   .container {
-     width: 98vw;           
-    max-width: 98vw;      
-    min-width: 0;          
-    margin: 1.5rem auto;   
-    padding: 0.8rem 1rem 4rem 0.5rem; 
-    border-radius: 5px;
-    box-sizing: border-box; 
-    overflow-wrap: break-word;
+    width: 90%;             /* Take almost full screen width */
+    margin: 2rem auto;      /* Reduce margin */
+    padding: 1rem;          /* Keep padding comfortable */
   }
-  
+
+  .container h1 {
+    font-size: 1.5rem;      /* Smaller heading */
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    padding: 1.5rem 0;
+  }
+
   .inputField {
-    flex-direction: row;
-    align-items: center;
-    padding: 0.3rem 0.2rem;
+    flex-direction: row;    /* Keep input & button in one line */
+    padding: 5px 0.8rem;
   }
 
   .inputField input {
-    width: 100%;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding: 8px;
-  }
-  
-  .inputField button {
-    width: 100%;
-    max-width: 38px;
-    min-width: 28px;
-    height: 32px;
-    font-size: 1.2rem;
-    align-self: center;
-    margin: 0;
-  }
-   .toDoList {
-    max-height: none !important;    /* Remove fixed max height on small screens */
-    overflow-y: visible !important; /* Show full content without clipping */
-    padding-right: 0; 
-   }
-  .list-items .items {
-    flex-direction: row;
-    gap: 7px;
-    padding-bottom: 12px;
+    width: 80%;             /* Input takes more space */
+    font-size: 0.9rem;
   }
 
-  .items-text {
-    gap: 7px;
-    font-size: 0.95rem;
+  .inputField button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+  }
+
+  .toDoList {
+    max-height: 300px;      /* Slightly smaller scroll area */
+    padding-right: 5px;
+  }
+
+  .list-items .items {
+    padding: 10px;          /* Compact list items */
+    font-size: 0.9rem;
   }
 
   .icons-container {
-    
-    flex-direction: row ;  /* force row layout */
-    flex-wrap: nowrap ;    /* prevent wrapping */
-    align-items: center ;  /* vertically center icons */
-    gap: 2px ;              /* small gap */
-    margin-left: auto ;
+    gap: 5px;
   }
-  .icons-container .edit-icon,
-  .icons-container .delete-icon,
-  .icons-container .save-icon {  
-    flex-shrink: 0;         
+
+  .edit-icon, .save-icon, .delete-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
   }
+
   .stats {
-    padding: 6px 8px;
-    font-size: 0.85rem;
-    height: auto;
-    text-align: center;
+    font-size: 0.85rem;     /* Smaller footer text */
+    padding: 8px;
   }
 }
 
+/* 📲 Very Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .container h1 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .inputField input {
+    font-size: 0.8rem;
+  }
+
+  .list-items .items {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
