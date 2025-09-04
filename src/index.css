@@ -294,22 +294,27 @@ input[type='checkbox'] {
   }
 
   .items {
-    flex-wrap: wrap;   /* Allow wrapping */
+    display: flex;
+    align-items: center;
+       
     gap: 8px;
   }
   .items-text input[type="text"] {
-    font-size: 0.8rem;
-    width: 45%;    
+    flex: 0 1 60%;
+    min-width: 120px;
+    max-width: 250px;
+        
   }
-}
+
 
   .items-text {
     flex: 1;   /* Expand text area */
   }
 
   .icons-container {
-    justify-content: flex-end;
-    width: 100%;  /* Push icons to next row if needed */
+    display:flex;
+    gap: 6px;
+    flex-shrink: 0;
   }
 
   .edit-icon, .save-icon, .delete-icon {
