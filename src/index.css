@@ -270,6 +270,12 @@ input[type='checkbox'] {
     flex-wrap: wrap;
     gap:8px;
   }
+    .items-text input[type="text"] {
+    font-size: 0.8rem;
+    width: 45%;    /* ✅ even smaller for very small screens */
+  }
+
+  
   .items-text{
     flex: 1;
   }
@@ -291,6 +297,11 @@ input[type='checkbox'] {
     flex-wrap: wrap;   /* Allow wrapping */
     gap: 8px;
   }
+  .items-text input[type="text"] {
+    font-size: 0.8rem;
+    width: 45%;    
+  }
+}
 
   .items-text {
     flex: 1;   /* Expand text area */
