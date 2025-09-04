@@ -179,7 +179,21 @@ input[type='checkbox'] {
 .edit-icon:hover {
   color: #3d79b1;
 }
+.save-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(186, 186, 186);
+  border-radius: 50%;
+  padding: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-right: 0px;
+}
 
+.save-icon:hover {
+  color: #3d79b1;
+}
 
 /* =========== Small Devices (Phones) =========== */
 @media (max-width: 480px) {
@@ -250,56 +264,6 @@ input[type='checkbox'] {
     font-size: 0.85rem;
     height: auto;
     text-align: center;
-  }
-}
-
-/* =========== Medium Devices (Tablets) =========== */
-@media (min-width: 481px) and (max-width: 900px) {
-  .container {
-    width: 90vw;
-    max-width: 90vw;
-    min-width: 0;
-    margin: 2rem auto;
-    padding: 1rem 1rem;
-  }
-
-  .inputField input {
-    width: 93%;
-    font-size: 1rem;
-  }
-
-  .inputField button {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-  }
-
-  .list-items .items {
-    gap: 8px;
-  }
-}
-
-/* =========== Large Devices (Desktops) =========== */
-@media (min-width: 901px) {
-  .container {
-    width: 400px;
-    min-width: 240px;
-    max-width: 98vw;
-    margin: 3rem auto;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-
-  .inputField input {
-    width: 85%;
-    font-size: 1.1rem;
-  }
-
-  .inputField button {
-    min-width: 30px;
-    width: 35px;
-    height: 35px;
-    font-size: 2rem;
   }
 }
 
